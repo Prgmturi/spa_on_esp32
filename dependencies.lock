@@ -1,0 +1,21 @@
+dependencies:
+  espressif/mdns:
+    component_hash: d6665090cf41eb399c184aab6f34234251a773e052fb53ca044dcb576264c646
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.2.1
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.1
+  protocol_examples_common:
+    component_hash: null
+    source:
+      path: /home/salvo/.platformio/packages/framework-espidf/examples/common_components/protocol_examples_common
+      type: local
+    version: '*'
+manifest_hash: d6d6882a59426b734663655101d5a61de75fe0159a64db1a010339e7ce3601b4
+target: esp32
+version: 1.0.0
