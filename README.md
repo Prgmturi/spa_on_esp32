@@ -35,6 +35,10 @@ WiFi Scan Auth Mode Threshold: Choose the weakest authmode to accept during the 
 mDNS Configuration
 mDNS Host Name: Specify the domain name used for the mDNS service. This allows access to the ESP32 device through a user-friendly domain name, such as "www.esp-home.local."
 
+#### NOTE: To Allow your esp32 read the chunked file you must avoid using /static in your website build folder. The maximum length for a file 31.
+    Go to webpack.config.js and change all the output (css,js and media) directory from /static/../chunk to /../chunk
+    for example js/12345has.chunk.js
+
 - Build and Upload the SPIFFS Image: Before building the firmware, create an image of the SPIFFS filesystem.
 - Build the Firmware: Build the firmware for the ESP32.
 
